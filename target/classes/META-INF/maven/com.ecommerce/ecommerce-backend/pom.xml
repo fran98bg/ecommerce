@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE project>
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <properties>
+  <spring-boot-dependencies-scope>import</spring-boot-dependencies-scope>
+ </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ecommerce</groupId>
+  <artifactId>ecommerce-backend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Simple Ecommerce</name>
+  <description>Proyecto para un ecommerce simple</description>
+  <dependencies>
+    <!-- Dependencias -->
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter</artifactId>
+    		<version>3.2.0</version>
+    		    <exclusions>
+        <exclusion>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </exclusion>
+    </exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>3.2.0</version>
+			    <exclusions>
+        <exclusion>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </exclusion>
+    </exclusions>
+		</dependency>
+		<dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-test</artifactId>
+        	<version>3.2.0</version>
+        	<scope>test</scope>
+        	    <exclusions>
+        <exclusion>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </exclusion>
+    </exclusions>
+    	</dependency>
+</dependencies>
+</project>
